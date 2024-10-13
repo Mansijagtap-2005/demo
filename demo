@@ -1,0 +1,59 @@
+#include<iostream>
+using namespace std;
+/*class my_class{
+
+    private:
+    int y=3;
+    int x=6;
+    public:
+    int getx(){
+        return x;
+    }
+    void setx(int val){
+        x=val;
+    }
+    
+};
+
+int main(){
+
+my_class obj1;
+my_class obj2;
+
+obj1.setx(5);
+cout<<obj1.getx()<<endl;
+obj2.setx(55);
+cout<<obj2.getx()<<endl;
+return 0;
+}*/
+
+
+class student{
+private:
+int x;
+int manu;
+int shri;
+
+public:
+char getx(){
+    return x;
+}
+void setx(char val){
+    x=val;
+}
+void student::show();
+
+};
+
+void student::show(){
+    cout<<"hello"<<endl;
+}
+
+int main(){
+    student obj1;
+    obj1.setx('A');
+    cout<<obj1.getx();
+    obj1.show();
+
+    return 0;
+}
